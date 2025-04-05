@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+}
+.calcultor{
+    background-color: aqua;
+    padding:20px;
+    border: 2px solid black;
+    border-radius:15px;
+}
+input{
+width:250px;
+padding: 15px;
+margin: 8px;
+font-size: 30px;
+
+}
+button{
+    padding: 6px;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    font-size:medium;
+
+}
+.buttons{
+    background-color: rgb(190, 93, 19);
+}
+
+
+
+
+

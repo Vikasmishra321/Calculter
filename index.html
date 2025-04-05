@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcultor project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+>
+<body>
+        <div class="calcultor">
+        <input type="text" placeholder="0" id="inputbox" readonly>
+
+        <div>
+            <button onclick= "allclearResult('AC')" class="buttons">AC</button>
+            <button onclick="dellastResult('DE')" class="buttons">DE</button>
+            <button onclick="addresult('%')" class="buttons">%</button>
+            <button onclick="addresult('/')" class="buttons">/</button>
+        </div>
+        <div>
+            <button onclick="addresult('7')" class="buttons" >7</button>
+            <button onclick="addresult('8')" class="buttons">8</button>
+            <button onclick="addresult('9')" class="buttons">9</button>
+            <button onclick="addresult('*')" class="buttons">*</button> 
+        </div>
+        <div>
+            <button onclick="addresult('6')" class="buttons">6</button>
+            <button onclick="addresult('5')" class="buttons">5</button>
+            <button onclick="addresult('4')" class="buttons">4</button>
+            <button onclick="addresult('-')" class="buttons">-</button>
+
+        </div>
+        <div>
+            <button onclick="addresult('3')" class="buttons">3</button>
+            <button onclick="addresult('2')" class="buttons">2</button>
+            <button onclick="addresult('1')" class="buttons">1</button>
+            <button onclick="addresult('+')" class="buttons">+</button>
+        </div>
+        <div>
+            <button onclick="addresult('0')" class="buttons">0</button>
+            <button onclick="addresult('00')" class="buttons">00</button>
+            <button onclick="addresult('.')" class="buttons">.</button>
+            <button onclick="finalResult('=')" class="buttons">=</button>
+        </div>
+        <script>
+        
+        function allclearResult()
+            {
+                document.getElementById('inputbox').value='';
+            }
+            function dellastResult()
+            {
+                document.getElementById('inputbox').value=document.getElementById('inputbox').value.slice(0,-1);
+            }
+            function addresult(value)
+            {
+                document.getElementById('inputbox').value +=value;
+            }
+            function finalResult()
+            {
+                let p = document.getElementById('inputbox').value;
+                let q = eval(p);
+                document.getElementById('inputbox').value = q;
+            
+            
+            }
+            </script>
+        </body>
+</html>
+
+
+        
+            
+                
+            
+                
+            
